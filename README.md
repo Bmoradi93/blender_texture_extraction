@@ -6,23 +6,6 @@ This repository contains tools and scripts for extracting textures from Blender 
 
 The process extracts embedded textures from Blender (.blend) files and creates properly formatted MTL files that reference these textures, enabling 3D models to display with their original textures when loaded in any OBJ-compatible 3D viewer.
 
-## Project Structure
-
-```
-├── ValeroRefinery_Model/           # Complete model with textures
-│   ├── ValeroRefinery.obj         # 3D geometry
-│   ├── ValeroRefinery.mtl         # Material definitions with texture references
-│   └── Material_*.png             # 1,200 texture files
-├── ValeroWA02C_Model/             # Complete model with textures
-│   ├── ValeroWA02C.obj           # 3D geometry
-│   ├── ValeroWA02C.mtl           # Material definitions with texture references
-│   └── Mat_*.png                 # 700 texture files
-├── extract_textures_blender.py    # Main texture extraction script
-├── update_mtl_and_textures.py    # MTL file processing script
-├── copy_textures.py              # Texture organization script
-└── README.md                     # This documentation
-```
-
 ## Prerequisites
 
 - **Blender** (for texture extraction)
@@ -336,18 +319,6 @@ d 1.000000
 illum 2
 map_Kd Material_0.1000.png
 ```
-
-## Project Results
-
-### ValeroRefinery Model
-- **Files:** 1,202 total (1 OBJ + 1 MTL + 1,200 textures)
-- **Materials:** 1,200 materials with texture references
-- **Texture naming:** `Material_0.1000.png` to `Material_1.315.png`
-
-### ValeroWA02C Model
-- **Files:** 702 total (1 OBJ + 1 MTL + 700 textures)
-- **Materials:** 700 materials with texture references  
-- **Texture naming:** `Mat_0000.png` to `Mat_0699.png`
 
 ## Troubleshooting
 
